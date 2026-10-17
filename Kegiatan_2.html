@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e94e3">
+    <title>AIGONOMETRI — Aktivitas 2</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Kegiatan2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="initJam()">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="AIGONOMETRI.png" class="aigonometri"/></a>
+            <a href="index.html"><img src="logo_smp.png" class="logo-um"></a>
+            <div class="navb" id="nvb">
+                <i class="bx bx-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="Identitas_Modul.html"><b>Aktivitas</b></a></li>
+                    <li><a href="Petunjuk.html"><b>Petunjuk</b></a></li>
+                    <li><a href="About Us.html"><b>About Us</b></a></li>
+                    <li><a href="Evaluasi.html"><b>Evaluasi</b></a></li>
+                </ul>
+            </div>
+            <i class="bx bx-menu" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>AKTIVITAS 2</h1>
+            <br /><br />
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <div class="container-kegiatan-1">
+                    <h1>STEM Similarity Lab — Desain Miniatur Denah Ruangan</h1>
+                    <p style="color:#555;">&#9201; Alokasi waktu: <strong>10 menit</strong> &nbsp;|&nbsp; Tujuan: P.13, P.14</p>
+                    <br>
+
+                    <!-- BACAAN KONTEKSTUAL -->
+                    <div style="background:#fffde7;padding:20px;border-radius:12px;border-left:5px solid #f9a825;margin-bottom:24px;">
+                        <h2 style="color:#e65100;">&#128218; Bacaan: Proyek Desain Interior Bu Sari</h2>
+                        <br>
+                        <p>Bu Sari adalah seorang desainer interior yang sedang mengerjakan proyek renovasi sebuah kafe kecil di kota. Sebelum memulai pekerjaan di lapangan, ia selalu membuat <strong>denah miniatur</strong> dari setiap ruangan agar klien bisa membayangkan hasil akhirnya tanpa harus menunggu renovasi selesai.</p>
+                        <br>
+                        <p>Salah satu ruangan yang akan direnovasi adalah <strong>ruang makan utama</strong>. Berdasarkan pengukuran di lapangan, ruang makan tersebut berbentuk persegi panjang dengan ukuran <strong>panjang 6 m</strong> dan <strong>lebar 4 m</strong>. Bu Sari ingin membuat maket miniatur ruangan ini untuk dipresentasikan kepada klien agar klien bisa membayangkan tata letak ruangan secara nyata.</p>
+                        <br>
+                        <p>Bahan yang tersedia hanya cukup untuk membuat maket dengan <strong>panjang maksimal 1,5 m</strong>. Bu Sari perlu menghitung lebar maket yang tepat agar maket tetap <em>proporsional</em> — artinya, maket harus <strong>sebangun</strong> dengan ruangan aslinya. Jika tidak proporsional, klien akan mendapat gambaran yang salah tentang bentuk ruangan.</p>
+                        <br>
+                        <p>Bu Sari menggunakan konsep <strong>faktor skala</strong> untuk menyelesaikan masalah ini. Ikuti langkah-langkah berikut untuk membantunya!</p>
+                    </div>
+
+                    <!-- LANGKAH 1: FAKTOR SKALA -->
+                    <div class="question" style="margin-bottom:20px;">
+                        <h3>&#128221; Langkah 1: Menentukan Faktor Skala</h3>
+                        <p>Bu Sari tahu bahwa <strong>faktor skala</strong> adalah perbandingan antara ukuran miniatur dengan ukuran aslinya. Faktor skala inilah yang menentukan seberapa besar pengecilan yang dilakukan.</p>
+                        <br>
+                        <p>Karena panjang ruangan asli adalah <strong>6 m</strong> dan panjang maket yang akan dibuat adalah <strong>1,5 m</strong>, Bu Sari menghitung:</p>
+                        <br>
+                        <p style="background:#f0f0f0;padding:10px;border-radius:6px;font-family:monospace;">Faktor skala = panjang maket &divide; panjang asli = 1,5 &divide; 6 = ?</p>
+                        <br>
+                        <p>Pilih nilai faktor skala yang tepat:</p>
+                        <select id="faktor-skala" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+                            <option value="">-- Pilih --</option>
+                            <option value="1/2">1/2</option>
+                            <option value="1/3">1/3</option>
+                            <option value="1/4">1/4</option>
+                            <option value="1/5">1/5</option>
+                        </select>
+                        <button onclick="cekFaktorSkala()" class="hero-btn" style="max-width:160px;margin-left:8px;">Cek</button>
+                        <div id="fb-fs" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- LANGKAH 2: LEBAR MINIATUR -->
+                    <div class="question" style="margin-bottom:20px;" id="langkah2" style="display:none;">
+                        <h3>&#128221; Langkah 2: Menentukan Lebar Miniatur</h3>
+                        <p>Setelah mengetahui faktor skala, Bu Sari bisa menghitung lebar miniatur. Prinsipnya sederhana: <strong>semua dimensi dikalikan dengan faktor skala yang sama</strong> agar miniatur tetap sebangun dengan aslinya.</p>
+                        <br>
+                        <p>Lebar ruangan asli adalah <strong>4 m</strong>. Dengan faktor skala yang sudah ditemukan, lebar maket seharusnya:</p>
+                        <br>
+                        <p style="background:#f0f0f0;padding:10px;border-radius:6px;font-family:monospace;">Lebar maket = lebar asli &times; faktor skala = 4 &times; (1/4) = ?</p>
+                        <br>
+                        <p>Masukkan jawaban lebar maket Bu Sari (dalam m):</p>
+                        <input type="number" id="lebar-miniatur" placeholder="Lebar maket (m)" style="padding:8px;border-radius:6px;border:1px solid #ccc;width:200px;margin-top:6px;">
+                        <span style="margin-left:4px;">m</span>
+                        <button onclick="cekLebarMiniatur()" class="hero-btn" style="max-width:160px;margin-left:8px;">Cek</button>
+                        <div id="fb-lm" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- SIMULASI VISUAL -->
+                    <div id="simulasi-visual" style="display:none;margin-bottom:20px;">
+                        <h3>&#128444;&#65039; Simulasi Visual: Denah Asli vs Miniatur</h3>
+                        <p>Bu Sari berhasil menentukan ukuran maket yang tepat. Perhatikan perbandingan antara ruangan asli dan maket yang akan dibuat:</p>
+                        <br>
+                        <div style="display:flex;gap:30px;flex-wrap:wrap;align-items:flex-end;">
+                            <div style="text-align:center;">
+                                <svg width="240" height="160" id="svg-asli">
+                                    <rect x="5" y="5" width="230" height="150" fill="#cce5ff" stroke="#2e94e3" stroke-width="3" rx="4"/>
+                                    <text x="120" y="70" text-anchor="middle" font-size="13" fill="#1a5276" font-weight="bold">Ruangan Asli</text>
+                                    <text x="120" y="88" text-anchor="middle" font-size="11" fill="#333">Ruang Makan</text>
+                                    <text x="120" y="106" text-anchor="middle" font-size="11" fill="#333">6 m &times; 4 m</text>
+                                </svg>
+                                <p style="font-size:0.85em;color:#555;">Ruangan Asli (6 &times; 4 m)</p>
+                            </div>
+                            <div style="text-align:center;">
+                                <svg width="60" height="40" id="svg-miniatur">
+                                    <rect x="2" y="2" width="56" height="36" fill="#fde8cc" stroke="#e67e22" stroke-width="2" rx="2"/>
+                                    <text x="30" y="18" text-anchor="middle" font-size="6" fill="#784212" font-weight="bold">Maket</text>
+                                    <text x="30" y="28" text-anchor="middle" font-size="5" fill="#333">1,5&times;1 m</text>
+                                </svg>
+                                <p style="font-size:0.85em;color:#555;">Maket (1,5 &times; 1 m)</p>
+                            </div>
+                        </div>
+                        <div style="background:#d4edda;padding:14px;border-radius:8px;margin-top:14px;">
+                            <p>&#10003; <strong>Verifikasi Bu Sari:</strong> 1,5/6 = <strong>1/4</strong> dan 1/4 = <strong>1/4</strong>. Perbandingan sisi bersesuaian sama &#8594; maket <strong>sebangun</strong> dengan ruangan asli!</p>
+                            <p style="margin-top:6px;">Faktor skala = 1/4 &#8800; 1, sehingga maket <strong>tidak kongruen</strong> dengan ruangan asli — ukurannya berbeda, tetapi bentuknya proporsional. Klien Bu Sari akan mendapat gambaran yang akurat tentang ruang makan tersebut.</p>
+                        </div>
+                    </div>
+
+                    <!-- LANGKAH 3: VERIFIKASI KESEBANGUNAN -->
+                    <div class="question" id="langkah3" style="display:none;margin-bottom:20px;">
+                        <h3>&#128221; Langkah 3: Verifikasi Miniatur Ruang Tamu</h3>
+                        <p>Klien Bu Sari ternyata menyimpan sebuah maket lama yang dibuat oleh desainer sebelumnya. Maket itu menggambarkan <strong>ruang tamu</strong> kafe, yang berukuran asli <strong>4,8 m &times; 3,2 m</strong>.</p>
+                        <br>
+                        <p>Maket lama tersebut berukuran <strong>1,2 m &times; 0,8 m</strong>. Klien bertanya kepada Bu Sari: <em>&ldquo;Apakah maket ini masih proporsional? Berapa faktor skalanya?&rdquo;</em></p>
+                        <br>
+                        <p>Bu Sari perlu memeriksa apakah perbandingan panjang dan lebar maket terhadap ukuran aslinya <strong>sama</strong>. Jika sama, maket itu sebangun dan faktor skalanya bisa ditentukan.</p>
+                        <br>
+                        <p style="background:#f0f0f0;padding:10px;border-radius:6px;font-family:monospace;">Perbandingan panjang: 1,2 &divide; 4,8 = ? &nbsp;|&nbsp; Perbandingan lebar: 0,8 &divide; 3,2 = ?</p>
+                        <br>
+                        <p>Pilih pernyataan yang benar:</p>
+                        <select id="verif-sebangun" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;width:100%;max-width:480px;">
+                            <option value="">-- Pilih jawaban --</option>
+                            <option value="a">Sebangun, faktor skala = 1/4</option>
+                            <option value="b">Sebangun, faktor skala = 1/3</option>
+                            <option value="c">Tidak sebangun, perbandingan panjang &ne; perbandingan lebar</option>
+                            <option value="d">Kongruen, karena ukurannya sama</option>
+                        </select>
+                        <button onclick="cekVerifSebangun()" class="hero-btn" style="max-width:160px;margin-top:10px;">Cek</button>
+                        <div id="fb-vs" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- EKSPLORASI MANDIRI -->
+                    <div id="eksplorasi" style="display:none;margin-bottom:20px;">
+                        <h3>&#128300; Eksplorasi Mandiri: Coba Ukuran Lain</h3>
+                        <p>Bu Sari penasaran — bagaimana jika klien meminta maket dengan ukuran yang berbeda? Apakah semua ukuran bisa menghasilkan maket yang sebangun dengan ruangan asli (6 &times; 4 m)?</p>
+                        <br>
+                        <p>Coba masukkan berbagai kombinasi panjang dan lebar maket, lalu periksa apakah hasilnya sebangun. Perhatikan pola yang muncul!</p>
+                        <br>
+                        <label>Panjang maket: <input type="number" id="exp-panjang" value="1.5" min="0.1" max="6" step="0.1" style="width:80px;padding:6px;border-radius:6px;border:1px solid #ccc;"> m</label>
+                        <label style="margin-left:16px;">Lebar maket: <input type="number" id="exp-lebar" value="1" min="0.1" max="4" step="0.1" style="width:80px;padding:6px;border-radius:6px;border:1px solid #ccc;"> m</label>
+                        <button onclick="cekEksplorasi()" class="hero-btn" style="max-width:200px;margin-top:10px;">Periksa Kesebangunan</button>
+                        <div id="fb-exp" style="margin-top:10px;"></div>
+                        <div id="exp-visual" style="margin-top:12px;"></div>
+                    </div>
+
+                    <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+                        <a href="Kegiatan_1.html" class="hero-btn" style="background:#6c757d;"><b>← Aktivitas 1</b></a>
+                        <a href="Kegiatan_3.html" class="hero-btn"><b>Lanjut ke Aktivitas 3 →</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="blog-right">
+                <h3>Daftar Aktivitas</h3>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Pendahuluan.html">Pendahuluan</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_1.html">Aktivitas 1</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_2.html">Aktivitas 2</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_3.html">Aktivitas 3</a></p></div>
+                <div class="kalender-jam">
+                    <div class="kalender">
+                        <span id="hari">Hari</span>, <span id="bulan">Bulan</span>, <span id="tanggal">00</span>, <span id="tahun">Tahun</span>
+                    </div>
+                    <div class="jam">
+                        <span id="hour">00</span>:<span id="menit">00</span>:<span id="detik">00</span> <span id="AMPM">AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="row">
+            <div><h4><a href="About Us.html">ABOUT US</a></h4><h1>Profil Sekolah</h1></div>
+            <div>
+                <h4><a href="index.html">AIGONOMETRI</a></h4>
+                <h1><a href="Kegiatan_1.html">Geometri</a></h1><br/>
+                <span><a href="Identitas_Modul.html">Kesebangunan dan Kekongruenan</a></span><br/><br/>
+                <span><a href="https://aws.amazon.com/id/what-is/artificial-intelligence/">Artificial Intelligence</a></span><br/><br/>
+                <span><a href="https://www.sinotif.com/berita_acara/berita_artikel/detail/memahami-jenis-ai-berdasarkan-teknologi-yang-digunakan">Rule-Based AI</a></span><br/><br/>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="univ-um">
+            <h4>The School</h4>
+            <p>SMP Plus Al Firdaus</p><p>SMKS Al Firdaus</p><p>Sekolah Menengah Pertama</p>
+            <p>Jl. Nusa Indah No. 351, Desa Bocek, Kecamatan Karangploso, Kabupaten Malang, Jawa Timur 65152</p>
+            <p>2026</p>
+            <div class="icons">
+                <i class="bx bxl-facebook-circle"></i><i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram-alt"></i><i class="bx bxl-whatsapp"></i>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="kopi-kanan"><p>© 2026 Rino Dharmawan Fikri All Rights Reserved</p></div>
+    </section>
+
+    <a href="" class="kembali-keatas" id="keatas1"><i class="bx bx-arrow-to-top"></i></a>
+
+    <script>
+    function cekFaktorSkala() {
+        const sel = document.getElementById('faktor-skala');
+        const fb = document.getElementById('fb-fs');
+        if (!sel.value) { fb.innerHTML = '<span style="color:orange;">⚠️ Pilih jawaban terlebih dahulu.</span>'; return; }
+        if (sel.value === '1/4') {
+            sel.style.border = '2px solid green';
+            fb.innerHTML = '<span style="color:green;">&#10003; Benar! 1,5 &divide; 6 = 1/4. Faktor skala = 1/4. Bu Sari bisa melanjutkan ke langkah berikutnya untuk menghitung lebar maket.</span>';
+            document.getElementById('langkah2').style.display = 'block';
+        } else {
+            sel.style.border = '2px solid red';
+            fb.innerHTML = `<span style="color:red;">&#10007; Kurang tepat. Hitung: 1,5 &divide; 6 = ? Ingat, faktor skala adalah perbandingan panjang maket terhadap panjang asli. Sederhanakan pecahannya.</span>`;
+        }
+    }
+
+    function cekLebarMiniatur() {
+        const val = parseFloat(document.getElementById('lebar-miniatur').value);
+        const fb = document.getElementById('fb-lm');
+        if (isNaN(val)) { fb.innerHTML = '<span style="color:orange;">&#9888; Masukkan angka terlebih dahulu.</span>'; return; }
+        if (val === 1) {
+            fb.innerHTML = '<span style="color:green;">&#10003; Benar! Lebar maket = 4 &times; 1/4 = <strong>1 m</strong>. Maket ruang makan Bu Sari berukuran 1,5 &times; 1 m, sebangun dengan ruangan asli 6 &times; 4 m. Klien akan mendapat gambaran yang akurat!</span>';
+            document.getElementById('simulasi-visual').style.display = 'block';
+            document.getElementById('langkah3').style.display = 'block';
+        } else if (val > 0 && val < 4) {
+            fb.innerHTML = `<span style="color:orange;">&#10007; Belum tepat. Kamu memasukkan ${val} m. Gunakan faktor skala 1/4: lebar maket = 4 &times; 1/4 = ?</span>`;
+        } else {
+            fb.innerHTML = '<span style="color:red;">&#10007; Nilai tidak masuk akal. Lebar maket harus lebih kecil dari lebar ruangan asli (4 m).</span>';
+        }
+    }
+
+    function cekVerifSebangun() {
+        const sel = document.getElementById('verif-sebangun');
+        const fb = document.getElementById('fb-vs');
+        if (!sel.value) { fb.innerHTML = '<span style="color:orange;">&#9888; Pilih jawaban terlebih dahulu.</span>'; return; }
+        if (sel.value === 'a') {
+            sel.style.border = '2px solid green';
+            fb.innerHTML = '<span style="color:green;">&#10003; Benar! 1,2 &divide; 4,8 = 1/4 dan 0,8 &divide; 3,2 = 1/4. Perbandingan sisi bersesuaian sama &rarr; maket <strong>sebangun</strong> dengan faktor skala <strong>1/4</strong>. Bu Sari bisa meyakinkan klien bahwa maket lama itu masih proporsional!</span>';
+            document.getElementById('eksplorasi').style.display = 'block';
+        } else {
+            sel.style.border = '2px solid red';
+            const hint = {
+                'b': 'Hitung ulang: 1,2 &divide; 4,8 = 1,2/4,8 = 1/4, bukan 1/3. Sederhanakan pecahannya dengan benar.',
+                'c': 'Hitung dulu kedua perbandingan: 1,2 &divide; 4,8 = ? dan 0,8 &divide; 3,2 = ? Apakah hasilnya benar-benar berbeda?',
+                'd': 'Kongruen berarti ukurannya sama persis. Maket 1,2&times;0,8 m jelas berbeda ukuran dengan ruangan asli 4,8&times;3,2 m.'
+            };
+            fb.innerHTML = `<span style="color:red;">&#10007; Kurang tepat. ${hint[sel.value]}</span>`;
+        }
+    }
+
+    function cekEksplorasi() {
+        const p = parseFloat(document.getElementById('exp-panjang').value);
+        const l = parseFloat(document.getElementById('exp-lebar').value);
+        const fb = document.getElementById('fb-exp');
+        const vis = document.getElementById('exp-visual');
+
+        if (isNaN(p) || isNaN(l) || p <= 0 || l <= 0) {
+            fb.innerHTML = '<span style="color:orange;">&#9888; Masukkan nilai positif untuk panjang dan lebar.</span>';
+            return;
+        }
+
+        const rasioP = p / 6;
+        const rasioL = l / 4;
+        const sebangun = Math.abs(rasioP - rasioL) < 0.001;
+        const kongruen = p === 6 && l === 4;
+
+        let html = `<strong>Perhitungan:</strong><br>`;
+        html += `Perbandingan panjang: ${p}/6 = ${(rasioP).toFixed(4)}<br>`;
+        html += `Perbandingan lebar: ${l}/4 = ${(rasioL).toFixed(4)}<br><br>`;
+
+        if (kongruen) {
+            html += `<div style="background:#d4edda;padding:10px;border-radius:8px;">&#10003; Ukuran sama dengan ruangan asli &#8594; <strong>Kongruen</strong> (dan juga sebangun, faktor skala = 1). Bu Sari tidak perlu mengecilkan maket.</div>`;
+        } else if (sebangun) {
+            const fs = (rasioP).toFixed(4);
+            html += `<div style="background:#d4edda;padding:10px;border-radius:8px;">&#10003; Perbandingan sisi bersesuaian sama (${fs}) &#8594; <strong>Sebangun</strong> tetapi tidak kongruen. Maket ini bisa digunakan Bu Sari untuk presentasi!</div>`;
+        } else {
+            html += `<div style="background:#f8d7da;padding:10px;border-radius:8px;">&#10007; Perbandingan tidak sama (${rasioP.toFixed(4)} &ne; ${rasioL.toFixed(4)}) &#8594; <strong>Tidak sebangun</strong>. Maket ini akan memberi gambaran yang salah kepada klien Bu Sari!<br>Agar sebangun, lebar seharusnya = 4 &times; (${p}/6) = <strong>${(4 * rasioP).toFixed(2)} m</strong>.</div>`;
+        }
+
+        fb.innerHTML = html;
+
+        const scaleX = Math.min(240 / p, 40);
+        const scaleY = Math.min(160 / l, 40);
+        const scale = Math.min(scaleX, scaleY, 40);
+        const w = Math.round(p * scale);
+        const h = Math.round(l * scale);
+        vis.innerHTML = `<svg width="${w+10}" height="${h+10}">
+            <rect x="5" y="5" width="${w}" height="${h}" fill="${sebangun||kongruen?'#d4edda':'#f8d7da'}" stroke="${sebangun||kongruen?'#27ae60':'#e74c3c'}" stroke-width="2" rx="3"/>
+            <text x="${w/2+5}" y="${h/2+5}" text-anchor="middle" font-size="10" fill="#333">Maket ${p}&times;${l} m</text>
+        </svg>`;
+    }
+    </script>
+    <script src="CourseScriptKomen.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGONOMETRI - Chatbot Export</title>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #e0f2ff; padding: 20px; }
+        
+    </style>
+</head>
+<body>
+    <section class="kegiatan-3">
+        <h1>Buat Chatbot AIGONOMETRI</h1>
+        <div class="input-container">
+            <input type="text" id="keyword" placeholder="Masukkan data yang kamu inginkan">
+            <input type="text" id="response" placeholder="Masukkan respon chatbot">
+            <button onclick="addRule()">Tambah Aturan</button>
+        </div>
+        <div class="rules-list">
+            <h2>Aturan dan Data Kamu:</h2>
+            <ul id="rulesDisplay"></ul>
+        </div>
+        <div style="text-align: center;">
+            <button onclick="exportChatbot()">Export Chatbot</button>
+        </div>
+    </section>
+    <script src="chatbot.js"></script>
+</body>
+</html>

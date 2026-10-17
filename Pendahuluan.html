@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e94e3">
+    <title>AIGONOMETRI — Pendahuluan</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Pendahuluan.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="initJam()">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="AIGONOMETRI.png" class="aigonometri"/></a>
+            <a href="index.html"><img src="logo_smp.png" class="logo-um"></a>
+            <div class="navb" id="nvb">
+                <i class="bx bx-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="Identitas_Modul.html"><b>Aktivitas</b></a></li>
+                    <li><a href="Petunjuk.html"><b>Petunjuk</b></a></li>
+                    <li><a href="About Us.html"><b>About Us</b></a></li>
+                    <li><a href="Evaluasi.html"><b>Evaluasi</b></a></li>
+                </ul>
+            </div>
+            <i class="bx bx-menu" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>PENDAHULUAN</h1>
+            <br /><br />
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <h1>Pendahuluan</h1>
+        <div class="row">
+            <div class="blog-left">
+
+                <!-- PENGANTAR -->
+                <div class="kegiatan-wrapper">
+                    <h2>Mari Mengingat Kembali!</h2>
+                    <p>Sebelum memulai pembelajaran tentang <strong>Kesebangunan dan Kekongruenan Bangun Datar</strong>, mari kita ingat kembali beberapa konsep dasar yang sudah pernah dipelajari.</p>
+                    <br>
+                    <div style="background:#e8f4fd;padding:16px;border-radius:10px;border-left:4px solid #2e94e3;">
+                        <p><strong>Ingat kembali:</strong></p>
+                        <ul style="margin-left:20px;line-height:2;">
+                            <li>Bangun datar memiliki <strong>sisi</strong> dan <strong>sudut</strong>.</li>
+                            <li><strong>Perbandingan</strong> dua bilangan ditulis sebagai pecahan, misalnya 3/6 = 1/2.</li>
+                            <li>Dua bangun dikatakan <strong>sama bentuknya</strong> jika sudut-sudutnya bersesuaian sama besar.</li>
+                            <li>Dua bangun dikatakan <strong>sama ukurannya</strong> jika sisi-sisinya bersesuaian sama panjang.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- A. MENGENAL BANGUN DATAR -->
+                <div class="kegiatan-wrapper" style="margin-top:24px;">
+                    <h3>A. Mengenal Sisi dan Sudut Bangun Datar</h3>
+                    <p>Perhatikan dua persegi panjang berikut. Seret jawaban yang tepat ke tempat yang tersedia!</p>
+                    <br>
+
+                    <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;">
+                        <!-- Bangun SVG -->
+                        <div>
+                            <p style="text-align:center;font-weight:bold;">Persegi Panjang P</p>
+                            <svg width="120" height="80" style="border:2px solid #2e94e3;border-radius:4px;">
+                                <rect x="5" y="5" width="110" height="70" fill="#cce5ff" stroke="#2e94e3" stroke-width="2"/>
+                                <text x="60" y="50" text-anchor="middle" font-size="12" fill="#333">p = 6 cm, l = 4 cm</text>
+                            </svg>
+                        </div>
+                        <div>
+                            <p style="text-align:center;font-weight:bold;">Persegi Panjang Q</p>
+                            <svg width="180" height="120" style="border:2px solid #e67e22;border-radius:4px;">
+                                <rect x="5" y="5" width="170" height="110" fill="#fde8cc" stroke="#e67e22" stroke-width="2"/>
+                                <text x="90" y="65" text-anchor="middle" font-size="12" fill="#333">p = 9 cm, l = 6 cm</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="drag-container">
+                        <div class="question">
+                            <p>Perbandingan panjang P terhadap panjang Q = <span class="dropzone" data-answer="2/3" style="display:inline-block;min-width:60px;height:28px;background:#eee;border:1px dashed #999;border-radius:4px;text-align:center;line-height:28px;padding:0 8px;"></span></p>
+                            <br>
+                            <p>Perbandingan lebar P terhadap lebar Q = <span class="dropzone" data-answer="2/3" style="display:inline-block;min-width:60px;height:28px;background:#eee;border:1px dashed #999;border-radius:4px;text-align:center;line-height:28px;padding:0 8px;"></span></p>
+                            <br>
+                            <p>Apakah kedua perbandingan tersebut sama? <span class="dropzone" data-answer="Ya" style="display:inline-block;min-width:60px;height:28px;background:#eee;border:1px dashed #999;border-radius:4px;text-align:center;line-height:28px;padding:0 8px;"></span></p>
+                        </div>
+                        <div class="options">
+                            <div class="draggable" draggable="true">2/3</div>
+                            <div class="draggable" draggable="true">3/4</div>
+                            <div class="draggable" draggable="true">Ya</div>
+                            <div class="draggable" draggable="true">Tidak</div>
+                            <div class="draggable" draggable="true">1/2</div>
+                        </div>
+                    </div>
+                    <p id="resultA" style="margin-top:8px;font-weight:bold;"></p>
+                    <button onclick="checkDragA()" class="hero-btn" style="max-width:200px;margin-top:8px;">Cek Jawaban</button>
+                </div>
+
+                <!-- B. KLASIFIKASI BANGUN -->
+                <div class="kegiatan-b" style="margin-top:24px;">
+                    <h3>B. Mengidentifikasi Pasangan Bangun</h3>
+                    <p>Perhatikan tiga pasangan bangun berikut. Pilih klasifikasi yang tepat untuk setiap pasangan!</p>
+                    <br>
+
+                    <!-- Pasangan 1 -->
+                    <div style="background:#f9f9f9;padding:16px;border-radius:10px;margin-bottom:16px;">
+                        <p><strong>Pasangan 1:</strong></p>
+                        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+                            <svg width="80" height="60"><rect x="5" y="5" width="70" height="50" fill="#cce5ff" stroke="#2e94e3" stroke-width="2"/><text x="40" y="35" text-anchor="middle" font-size="10">4×3 cm</text></svg>
+                            <span style="font-size:1.5em;">dan</span>
+                            <svg width="80" height="60"><rect x="5" y="5" width="70" height="50" fill="#cce5ff" stroke="#2e94e3" stroke-width="2"/><text x="40" y="35" text-anchor="middle" font-size="10">4×3 cm</text></svg>
+                        </div>
+                        <p style="margin-top:8px;">Dua persegi panjang masing-masing berukuran 4 cm × 3 cm.</p>
+                        <select id="klasifikasi1" style="margin-top:8px;padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- Pilih Klasifikasi --</option>
+                            <option value="kongruen">Kongruen</option>
+                            <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+                            <option value="tidak">Tidak sebangun</option>
+                        </select>
+                        <div id="fb1" style="margin-top:6px;"></div>
+                    </div>
+
+                    <!-- Pasangan 2 -->
+                    <div style="background:#f9f9f9;padding:16px;border-radius:10px;margin-bottom:16px;">
+                        <p><strong>Pasangan 2:</strong></p>
+                        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+                            <svg width="80" height="60"><rect x="5" y="5" width="70" height="50" fill="#fde8cc" stroke="#e67e22" stroke-width="2"/><text x="40" y="35" text-anchor="middle" font-size="10">6×4 cm</text></svg>
+                            <span style="font-size:1.5em;">dan</span>
+                            <svg width="120" height="80"><rect x="5" y="5" width="110" height="70" fill="#fde8cc" stroke="#e67e22" stroke-width="2"/><text x="60" y="45" text-anchor="middle" font-size="10">9×6 cm</text></svg>
+                        </div>
+                        <p style="margin-top:8px;">Persegi panjang 6 cm × 4 cm dan persegi panjang 9 cm × 6 cm.</p>
+                        <select id="klasifikasi2" style="margin-top:8px;padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- Pilih Klasifikasi --</option>
+                            <option value="kongruen">Kongruen</option>
+                            <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+                            <option value="tidak">Tidak sebangun</option>
+                        </select>
+                        <div id="fb2" style="margin-top:6px;"></div>
+                    </div>
+
+                    <!-- Pasangan 3 -->
+                    <div style="background:#f9f9f9;padding:16px;border-radius:10px;margin-bottom:16px;">
+                        <p><strong>Pasangan 3:</strong></p>
+                        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+                            <svg width="80" height="60"><rect x="5" y="5" width="70" height="50" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/><text x="40" y="35" text-anchor="middle" font-size="10">6×4 cm</text></svg>
+                            <span style="font-size:1.5em;">dan</span>
+                            <svg width="80" height="100"><rect x="5" y="5" width="70" height="90" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/><text x="40" y="55" text-anchor="middle" font-size="10">6×8 cm</text></svg>
+                        </div>
+                        <p style="margin-top:8px;">Persegi panjang 6 cm × 4 cm dan persegi panjang 6 cm × 8 cm.</p>
+                        <select id="klasifikasi3" style="margin-top:8px;padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- Pilih Klasifikasi --</option>
+                            <option value="kongruen">Kongruen</option>
+                            <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+                            <option value="tidak">Tidak sebangun</option>
+                        </select>
+                        <div id="fb3" style="margin-top:6px;"></div>
+                    </div>
+
+                    <button onclick="cekKlasifikasi()" class="hero-btn" style="max-width:200px;">Cek Semua Jawaban</button>
+                    <p id="resultB" style="margin-top:10px;font-weight:bold;"></p>
+                </div>
+
+                <!-- C. OPERASI PERBANDINGAN -->
+                <div class="kegiatan-c" style="margin-top:24px;">
+                    <h3>C. Mengingat Operasi Perbandingan</h3>
+                    <p>Hitunglah nilai perbandingan berikut dan isi jawabannya!</p>
+                    <br>
+                    <label>15 ÷ 60 = <input type="text" class="fill-blank" data-answer="1/4" placeholder="tulis sebagai pecahan"> </label>
+                    <p id="review-1"></p><br>
+                    <label>20 ÷ 80 = <input type="text" class="fill-blank" data-answer="1/4" placeholder="tulis sebagai pecahan"> </label>
+                    <p id="review-2"></p><br>
+                    <label>30 ÷ 120 = <input type="text" class="fill-blank" data-answer="1/4" placeholder="tulis sebagai pecahan"> </label>
+                    <p id="review-3"></p><br>
+                    <label>Jika panjang asli 120 cm dan faktor skala 1/4, maka panjang miniatur = <input type="text" class="fill-blank" data-answer="30" placeholder="cm"> cm</label>
+                    <p id="review-4"></p><br>
+                    <button onclick="checkAnswers()" class="hero-btn" style="max-width:200px;">Cek Jawaban</button>
+                    <p id="result"></p>
+                </div>
+
+                <!-- D. LITERASI AI -->
+                <div style="background:#fff3cd;padding:16px;border-radius:10px;margin-top:24px;border-left:4px solid #f0ad4e;">
+                    <h3>💡 Pengantar Literasi AI</h3>
+                    <p>Pada pembelajaran ini, kamu akan menggunakan <strong>Chatbot AIGONOMETRI</strong> — sebuah <strong>chatbot berbasis aturan (rule-based chatbot)</strong>.</p>
+                    <br>
+                    <p>Chatbot ini <strong>bukan AI generatif</strong>. Ia hanya bisa menjawab pertanyaan yang sesuai dengan aturan yang sudah diprogram. Artinya:</p>
+                    <ul style="margin-left:20px;line-height:2;margin-top:8px;">
+                        <li>Jika pertanyaanmu sesuai aturan → chatbot menjawab dengan benar.</li>
+                        <li>Jika pertanyaanmu di luar aturan → chatbot mungkin tidak mengenalinya.</li>
+                        <li>Kamu harus <strong>selalu memeriksa</strong> apakah jawaban chatbot sesuai konsep matematika.</li>
+                    </ul>
+                </div>
+
+                <!-- NAVIGASI -->
+                <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
+                    <a href="Kegiatan_1.html" class="hero-btn"><b>Lanjut ke Aktivitas 1 →</b></a>
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="blog-right">
+                <h3>Daftar Aktivitas</h3>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Pendahuluan.html">Pendahuluan</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_1.html">Aktivitas 1</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_2.html">Aktivitas 2</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_3.html">Aktivitas 3</a></p></div>
+                <div class="kalender-jam">
+                    <div class="kalender">
+                        <span id="hari">Hari</span>, <span id="bulan">Bulan</span> <span id="tanggal">00</span>, <span id="tahun">Tahun</span>
+                    </div>
+                    <div class="jam">
+                        <span id="hour">00</span>:<span id="menit">00</span>:<span id="detik">00</span> <span id="AMPM">AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="row">
+            <div>
+                <h4><a href="About Us.html">ABOUT US</a></h4>
+                <h1>Profil Sekolah</h1>
+            </div>
+            <div>
+                <h4><a href="index.html">AIGONOMETRI</a></h4>
+                <h1><a href="Kegiatan_1.html">Geometri</a></h1>
+                <br/>
+                <span><a href="Identitas_Modul.html">Kesebangunan dan Kekongruenan</a></span><br/><br/>
+                <span><a href="https://aws.amazon.com/id/what-is/artificial-intelligence/">Artificial Intelligence</a></span><br/><br/>
+                <span><a href="https://www.sinotif.com/berita_acara/berita_artikel/detail/memahami-jenis-ai-berdasarkan-teknologi-yang-digunakan">Rule-Based AI</a></span><br/><br/>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="univ-um">
+            <h4>The School</h4>
+            <p>SMP Plus Al Firdaus</p>
+            <p>SMKS Al Firdaus</p>
+            <p>Sekolah Menengah Pertama</p>
+            <p>Jl. Nusa Indah No. 351, Desa Bocek, Kecamatan Karangploso, Kabupaten Malang, Jawa Timur 65152</p>
+            <p>2026</p>
+            <div class="icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram-alt"></i>
+                <i class="bx bxl-whatsapp"></i>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="kopi-kanan"><p>© 2026 Rino Dharmawan Fikri All Rights Reserved</p></div>
+    </section>
+
+    <a href="" class="kembali-keatas" id="keatas1"><i class="bx bx-arrow-to-top"></i></a>
+
+    <script>
+    function checkDragA() {
+        const zones = document.querySelectorAll('.dropzone');
+        let correct = 0;
+        zones.forEach(z => {
+            if (z.textContent.trim() === z.dataset.answer) { correct++; z.style.background='#d4edda'; }
+            else { z.style.background='#f8d7da'; }
+        });
+        const r = document.getElementById('resultA');
+        if (correct === zones.length) {
+            r.innerHTML = "✅ Benar semua! Perbandingan 6/9 = 4/6 = 2/3. Karena perbandingannya sama, kedua bangun ini sebangun!";
+            r.style.color = 'green';
+        } else {
+            r.innerHTML = `❌ ${correct} dari ${zones.length} benar. Hitung ulang: 6÷9 = ? dan 4÷6 = ?`;
+            r.style.color = 'orange';
+        }
+    }
+
+    function cekKlasifikasi() {
+        const jawaban = [
+            { id: 'klasifikasi1', benar: 'kongruen', fb: 'fb1',
+              salah: 'Kedua bangun memiliki bentuk dan ukuran yang sama (4×3 cm = 4×3 cm), sehingga <strong>kongruen</strong>.',
+              benarMsg: '✅ Benar! Kedua bangun memiliki bentuk dan ukuran yang sama → kongruen.' },
+            { id: 'klasifikasi2', benar: 'sebangun', fb: 'fb2',
+              salah: 'Periksa perbandingan: 6/9 = 2/3 dan 4/6 = 2/3. Perbandingannya sama, tetapi ukurannya berbeda → sebangun tetapi tidak kongruen.',
+              benarMsg: '✅ Benar! Perbandingan 6/9 = 4/6 = 2/3 (sama), ukuran berbeda → sebangun tetapi tidak kongruen.' },
+            { id: 'klasifikasi3', benar: 'tidak', fb: 'fb3',
+              salah: 'Periksa perbandingan: 6/6 = 1 tetapi 4/8 = 1/2. Perbandingannya tidak sama → tidak sebangun.',
+              benarMsg: '✅ Benar! Perbandingan 6/6 = 1 ≠ 4/8 = 1/2 → tidak sebangun.' }
+        ];
+        let skor = 0;
+        jawaban.forEach(j => {
+            const sel = document.getElementById(j.id);
+            const fb = document.getElementById(j.fb);
+            if (sel.value === j.benar) {
+                skor++;
+                sel.style.border = '2px solid green';
+                fb.innerHTML = `<span style="color:green;">${j.benarMsg}</span>`;
+            } else if (sel.value === '') {
+                fb.innerHTML = `<span style="color:orange;">⚠️ Pilih jawaban terlebih dahulu.</span>`;
+            } else {
+                sel.style.border = '2px solid red';
+                fb.innerHTML = `<span style="color:red;">❌ Kurang tepat. ${j.salah}</span>`;
+            }
+        });
+        const r = document.getElementById('resultB');
+        r.innerHTML = skor === 3
+            ? '🎉 Semua benar! Kamu siap melanjutkan ke Aktivitas 1.'
+            : `Kamu benar ${skor} dari 3. Baca kembali penjelasan di setiap soal ya!`;
+        r.style.color = skor === 3 ? 'green' : 'orange';
+    }
+
+    function checkAnswers() {
+        const inputs = document.querySelectorAll('.fill-blank');
+        let skor = 0;
+        const reviews = ['review-1','review-2','review-3','review-4'];
+        const hints = [
+            'Hitung 15÷60. Sederhanakan: 15/60 = 1/4.',
+            'Hitung 20÷80. Sederhanakan: 20/80 = 1/4.',
+            'Hitung 30÷120. Sederhanakan: 30/120 = 1/4.',
+            'Faktor skala 1/4 × 120 = 30 cm.'
+        ];
+        inputs.forEach((inp, i) => {
+            const r = document.getElementById(reviews[i]);
+            if (inp.value.trim() === inp.dataset.answer) {
+                skor++;
+                inp.style.background = '#d4edda';
+                r.innerHTML = '<span style="color:green;">✅ Benar!</span>';
+            } else {
+                inp.style.background = '#f8d7da';
+                r.innerHTML = `<span style="color:orange;">❌ ${hints[i]}</span>`;
+            }
+        });
+        document.getElementById('result').innerHTML = skor === inputs.length
+            ? '🎉 Semua benar! Kamu sudah siap belajar faktor skala.'
+            : `Skor: ${skor}/${inputs.length}. Periksa kembali jawabanmu.`;
+    }
+
+    </script>
+    <script src="CourseScriptKomen.js"></script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e94e3">
+    <title>AIGONOMETRI — Aktivitas 1</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Kegiatan1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="initJam()">
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="AIGONOMETRI.png" class="aigonometri"/></a>
+        <a href="index.html"><img src="logo_smp.png" class="logo-um"></a>
+        <div class="navb" id="nvb">
+            <i class="bx bx-x" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="Identitas_Modul.html"><b>Aktivitas</b></a></li>
+                <li><a href="Petunjuk.html"><b>Petunjuk</b></a></li>
+                <li><a href="About Us.html"><b>About Us</b></a></li>
+                <li><a href="Evaluasi.html"><b>Evaluasi</b></a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>AKTIVITAS 1</h1>
+        <br /><br />
+    </div>
+</section>
+<section class="blog-content">
+<div class="row">
+<div class="blog-left">
+<div class="container-kegiatan-1">
+
+<h1>AI Concept Explorer</h1>
+<p style="color:#555;">&#9201; Alokasi waktu: <strong>10 menit</strong> &nbsp;|&nbsp; Tujuan: G.21, P.13</p>
+<br>
+
+<!-- BACAAN KONTEKSTUAL -->
+<div style="background:#fffde7;padding:20px;border-radius:12px;border-left:5px solid #f9a825;margin-bottom:24px;">
+    <h2 style="color:#e65100;">&#128218; Bacaan: Renovasi Rumah Pak Hendra</h2>
+    <br>
+    <p>Pak Hendra adalah seorang kontraktor bangunan yang sedang mengerjakan renovasi tiga ruangan berbeda di sebuah rumah. Ia perlu memesan berbagai material bangunan: <strong>ubin lantai</strong> untuk kamar mandi, <strong>papan triplek</strong> untuk sekat ruangan, dan <strong>kaca jendela</strong> untuk dua jendela di ruang tamu.</p>
+    <br>
+    <p>Sebelum memesan, Pak Hendra mengukur semua material yang sudah ada sebagai acuan. Ia ingin memastikan material baru yang dipesan memiliki ukuran yang <em>tepat sama</em> atau setidaknya <em>proporsional</em> dengan yang lama, agar tampilan ruangan tetap rapi dan seragam.</p>
+    <br>
+    <p>Tiga pekerjaan yang dihadapi Pak Hendra:</p>
+    <ul style="margin-left:20px;line-height:2.2;margin-top:8px;">
+        <li>Kamar mandi menggunakan ubin lama berukuran <strong>30 cm × 30 cm</strong>. Ia ingin memesan ubin tambahan dengan ukuran yang <em>sama persis</em>.</li>
+        <li>Sekat ruangan lama berukuran <strong>60 cm × 40 cm</strong>. Ia ingin membuat sekat baru yang lebih besar namun tetap <em>proporsional</em>.</li>
+        <li>Dua kaca jendela di ruang tamu berukuran berbeda — ia perlu mengecek apakah keduanya <em>proporsional</em> atau tidak sebelum memutuskan desain kusen.</li>
+    </ul>
+    <br>
+    <p>Pak Hendra kemudian menggunakan <strong>Chatbot AIGONOMETRI</strong> untuk membantu perhitungan. Namun ia tahu bahwa chatbot ini bekerja berdasarkan aturan yang sudah diprogram — bukan AI yang bisa berpikir sendiri. Ia selalu memverifikasi jawaban chatbot secara manual sebelum memesan material.</p>
+</div>
+
+<!-- KONSEP DASAR -->
+<div style="background:#e8f4fd;padding:16px;border-radius:10px;margin-bottom:24px;border-left:4px solid #2e94e3;">
+    <h3>&#128208; Konsep yang Perlu Kamu Pahami</h3>
+    <br>
+    <p><strong>Kongruen</strong> artinya dua bangun memiliki <em>bentuk dan ukuran yang sama persis</em>. Semua sisi bersesuaian sama panjang dan semua sudut bersesuaian sama besar. Faktor skala = 1.</p>
+    <br>
+    <p><strong>Sebangun</strong> artinya dua bangun memiliki <em>bentuk yang sama</em> (sudut bersesuaian sama besar) dan <em>perbandingan sisi bersesuaian yang sama</em>, tetapi ukurannya boleh berbeda. Faktor skala bisa berapa saja.</p>
+    <br>
+    <p><strong>Tidak sebangun</strong> artinya perbandingan sisi bersesuaian tidak sama, meskipun kedua bangun memiliki jenis yang sama.</p>
+    <br>
+    <p style="color:#c0392b;font-size:0.92em;">&#9888;&#65039; <strong>Perhatian:</strong> Dua persegi panjang tidak otomatis sebangun hanya karena sama-sama berbentuk persegi panjang. Perbandingan sisi bersesuaian harus dihitung dan diperiksa!</p>
+</div>
+
+<!-- SOAL 1 -->
+<div class="question" style="background:#f9f9f9;padding:20px;border-radius:12px;margin-bottom:24px;border:1px solid #ddd;">
+    <h3>&#128269; Soal 1 — Ubin Kamar Mandi</h3>
+    <br>
+    <p>Kamar mandi di rumah yang direnovasi Pak Hendra menggunakan ubin lama berukuran <strong>30 cm × 30 cm</strong>. Beberapa ubin retak dan harus diganti. Pak Hendra memesan ubin pengganti yang juga berukuran <strong>30 cm × 30 cm</strong>.</p>
+    <br>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:center;margin:12px 0;">
+        <div style="text-align:center;">
+            <svg width="90" height="90">
+                <rect x="5" y="5" width="80" height="80" fill="#cce5ff" stroke="#2e94e3" stroke-width="2" rx="3"/>
+                <text x="45" y="48" text-anchor="middle" font-size="11" fill="#1a5276" font-weight="bold">30 cm</text>
+                <text x="45" y="62" text-anchor="middle" font-size="11" fill="#1a5276">&#215; 30 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Ubin A</p>
+        </div>
+        <div style="font-size:1.8em;color:#888;">&#8596;</div>
+        <div style="text-align:center;">
+            <svg width="90" height="90">
+                <rect x="5" y="5" width="80" height="80" fill="#cce5ff" stroke="#2e94e3" stroke-width="2" rx="3"/>
+                <text x="45" y="48" text-anchor="middle" font-size="11" fill="#1a5276" font-weight="bold">30 cm</text>
+                <text x="45" y="62" text-anchor="middle" font-size="11" fill="#1a5276">&#215; 30 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Ubin B</p>
+        </div>
+    </div>
+    <br>
+    <p><strong>a.</strong> Hitung perbandingan sisi Ubin A terhadap Ubin B:</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">Perbandingan sisi = 30 ÷ 30 = ?</p>
+    <select id="s1a" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="1">1</option>
+        <option value="1/2">1/2</option>
+        <option value="2">2</option>
+        <option value="3/4">3/4</option>
+    </select>
+    <div id="fb-s1a" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>b.</strong> Berdasarkan perbandingan tersebut, bagaimana hubungan Ubin A dan Ubin B?</p>
+    <select id="s1b" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="kongruen">Kongruen</option>
+        <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+        <option value="tidak">Tidak sebangun</option>
+    </select>
+    <div id="fb-s1b" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>c.</strong> Jika dua ubin dikatakan kongruen, apakah artinya ubin tersebut juga sebangun? Pilih jawaban yang paling tepat.</p>
+    <select id="s1c" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;width:100%;max-width:500px;">
+        <option value="">-- Pilih --</option>
+        <option value="ya">Ya, karena kongruen adalah kasus khusus sebangun dengan faktor skala = 1</option>
+        <option value="tidak">Tidak, karena kongruen dan sebangun adalah dua hal yang berbeda</option>
+        <option value="tergantung">Tergantung ukurannya</option>
+    </select>
+    <div id="fb-s1c" style="margin-top:6px;"></div>
+    <br>
+    <button onclick="cekSoal1()" class="hero-btn" style="max-width:200px;">Cek Jawaban Soal 1</button>
+    <p id="result-s1" style="margin-top:10px;font-weight:bold;"></p>
+</div>
+
+<!-- SOAL 2 -->
+<div class="question" style="background:#f9f9f9;padding:20px;border-radius:12px;margin-bottom:24px;border:1px solid #ddd;">
+    <h3>&#128269; Soal 2 — Sekat Triplek Ruangan</h3>
+    <br>
+    <p>Pak Hendra memiliki sekat triplek lama berukuran <strong>60 cm × 40 cm</strong> yang digunakan sebagai pembatas ruangan kecil. Ia ingin membuat sekat baru yang lebih besar untuk ruangan utama, berukuran <strong>90 cm × 60 cm</strong>. Sebelum memesan, ia ingin memastikan sekat baru tersebut <em>proporsional</em> (sebangun) dengan sekat lama.</p>
+    <br>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin:12px 0;">
+        <div style="text-align:center;">
+            <svg width="120" height="85">
+                <rect x="5" y="5" width="110" height="75" fill="#fde8cc" stroke="#e67e22" stroke-width="2" rx="3"/>
+                <text x="60" y="42" text-anchor="middle" font-size="11" fill="#784212" font-weight="bold">60 cm</text>
+                <text x="60" y="57" text-anchor="middle" font-size="11" fill="#784212">&#215; 40 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Sekat Lama (60×40 cm)</p>
+        </div>
+        <div style="font-size:1.8em;color:#888;">&#8596;</div>
+        <div style="text-align:center;">
+            <svg width="170" height="115">
+                <rect x="5" y="5" width="160" height="105" fill="#fde8cc" stroke="#e67e22" stroke-width="2" rx="3"/>
+                <text x="85" y="57" text-anchor="middle" font-size="11" fill="#784212" font-weight="bold">90 cm</text>
+                <text x="85" y="72" text-anchor="middle" font-size="11" fill="#784212">&#215; 60 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Sekat Baru (90×60 cm)</p>
+        </div>
+    </div>
+    <br>
+    <p><strong>a.</strong> Hitung perbandingan panjang Sekat Lama terhadap Sekat Baru:</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">60 ÷ 90 = ?</p>
+    <select id="s2a" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="2/3">2/3</option>
+        <option value="3/2">3/2</option>
+        <option value="1/2">1/2</option>
+        <option value="3/4">3/4</option>
+    </select>
+    <div id="fb-s2a" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>b.</strong> Hitung perbandingan lebar Sekat Lama terhadap Sekat Baru:</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">40 ÷ 60 = ?</p>
+    <select id="s2b" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="2/3">2/3</option>
+        <option value="3/2">3/2</option>
+        <option value="1/2">1/2</option>
+        <option value="3/4">3/4</option>
+    </select>
+    <div id="fb-s2b" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>c.</strong> Apakah kedua perbandingan tersebut sama?</p>
+    <select id="s2c" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="ya">Ya, keduanya sama (2/3 = 2/3)</option>
+        <option value="tidak">Tidak, keduanya berbeda</option>
+    </select>
+    <div id="fb-s2c" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>d.</strong> Berdasarkan hasil perhitunganmu, bagaimana hubungan Sekat Lama dan Sekat Baru?</p>
+    <select id="s2d" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;width:100%;max-width:500px;">
+        <option value="">-- Pilih --</option>
+        <option value="kongruen">Kongruen</option>
+        <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+        <option value="tidak">Tidak sebangun</option>
+    </select>
+    <div id="fb-s2d" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>e.</strong> Berapakah faktor skala dari Sekat Baru ke Sekat Lama?</p>
+    <select id="s2e" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="2/3">2/3</option>
+        <option value="3/2">3/2</option>
+        <option value="1">1</option>
+        <option value="1/2">1/2</option>
+    </select>
+    <div id="fb-s2e" style="margin-top:6px;"></div>
+    <br>
+    <button onclick="cekSoal2()" class="hero-btn" style="max-width:200px;">Cek Jawaban Soal 2</button>
+    <p id="result-s2" style="margin-top:10px;font-weight:bold;"></p>
+</div>
+
+<!-- SOAL 3 -->
+<div class="question" style="background:#f9f9f9;padding:20px;border-radius:12px;margin-bottom:24px;border:1px solid #ddd;">
+    <h3>&#128269; Soal 3 — Kaca Jendela Ruang Tamu</h3>
+    <br>
+    <p>Di ruang tamu terdapat dua jendela dengan ukuran kaca berbeda. <strong>Kaca Jendela P</strong> (jendela samping) berukuran <strong>15 cm × 10 cm</strong>, sedangkan <strong>Kaca Jendela Q</strong> (jendela depan) berukuran <strong>20 cm × 12 cm</strong>. Pak Hendra ingin tahu apakah kedua kaca tersebut proporsional agar kusen bisa dibuat dengan desain yang seragam.</p>
+    <br>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin:12px 0;">
+        <div style="text-align:center;">
+            <svg width="105" height="75">
+                <rect x="5" y="5" width="95" height="65" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" rx="3"/>
+                <text x="52" y="38" text-anchor="middle" font-size="11" fill="#1e8449" font-weight="bold">15 cm</text>
+                <text x="52" y="53" text-anchor="middle" font-size="11" fill="#1e8449">&#215; 10 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Kaca Jendela P</p>
+        </div>
+        <div style="font-size:1.8em;color:#888;">&#8596;</div>
+        <div style="text-align:center;">
+            <svg width="135" height="90">
+                <rect x="5" y="5" width="125" height="80" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" rx="3"/>
+                <text x="67" y="45" text-anchor="middle" font-size="11" fill="#1e8449" font-weight="bold">20 cm</text>
+                <text x="67" y="60" text-anchor="middle" font-size="11" fill="#1e8449">&#215; 12 cm</text>
+            </svg>
+            <p style="font-size:0.85em;color:#555;margin-top:4px;">Kaca Jendela Q</p>
+        </div>
+    </div>
+    <br>
+    <p><strong>a.</strong> Hitung perbandingan panjang Kaca P terhadap Kaca Q:</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">15 ÷ 20 = ?</p>
+    <select id="s3a" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="3/4">3/4</option>
+        <option value="2/3">2/3</option>
+        <option value="4/3">4/3</option>
+        <option value="5/6">5/6</option>
+    </select>
+    <div id="fb-s3a" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>b.</strong> Hitung perbandingan lebar Kaca P terhadap Kaca Q:</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">10 ÷ 12 = ?</p>
+    <select id="s3b" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="5/6">5/6</option>
+        <option value="3/4">3/4</option>
+        <option value="2/3">2/3</option>
+        <option value="4/5">4/5</option>
+    </select>
+    <div id="fb-s3b" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>c.</strong> Apakah 3/4 sama dengan 5/6?</p>
+    <select id="s3c" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="tidak">Tidak, 3/4 = 0,75 sedangkan 5/6 ≈ 0,833</option>
+        <option value="ya">Ya, keduanya sama</option>
+    </select>
+    <div id="fb-s3c" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>d.</strong> Berdasarkan hasil perhitunganmu, bagaimana hubungan Kaca P dan Kaca Q?</p>
+    <select id="s3d" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;width:100%;max-width:500px;">
+        <option value="">-- Pilih --</option>
+        <option value="kongruen">Kongruen</option>
+        <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+        <option value="tidak">Tidak sebangun</option>
+    </select>
+    <div id="fb-s3d" style="margin-top:6px;"></div>
+    <br>
+    <p><strong>e.</strong> Jika Pak Hendra ingin memesan kaca baru yang sebangun dengan Kaca P dan panjangnya 20 cm, berapakah lebar kaca yang harus dipesan?</p>
+    <p style="margin-left:16px;color:#555;font-size:0.92em;">Petunjuk: Faktor skala = 20 ÷ 15 = 4/3. Lebar baru = 10 × 4/3 = ?</p>
+    <select id="s3e" style="padding:6px;border-radius:6px;border:1px solid #ccc;margin-top:6px;">
+        <option value="">-- Pilih --</option>
+        <option value="40/3">40/3 cm (sekitar 13,3 cm)</option>
+        <option value="12">12 cm</option>
+        <option value="15">15 cm</option>
+        <option value="8">8 cm</option>
+    </select>
+    <div id="fb-s3e" style="margin-top:6px;"></div>
+    <br>
+    <button onclick="cekSoal3()" class="hero-btn" style="max-width:200px;">Cek Jawaban Soal 3</button>
+    <p id="result-s3" style="margin-top:10px;font-weight:bold;"></p>
+</div>
+
+<!-- PERIKSA KELUARAN CHATBOT -->
+<div style="background:#f3e5f5;padding:20px;border-radius:12px;margin-bottom:24px;border-left:5px solid #9b59b6;">
+    <h3>&#129302; Bagian Literasi AI — Periksa Keluaran Chatbot</h3>
+    <br>
+    <p>Pak Hendra mencoba bertanya kepada <strong>Chatbot AIGONOMETRI</strong> untuk membantu pekerjaannya. Chatbot memberikan dua respons berikut. Tugasmu adalah memeriksa apakah respons tersebut benar secara matematis!</p>
+    <br>
+
+    <div style="background:#fff;padding:16px;border-radius:10px;margin-bottom:16px;border:1px solid #ddd;">
+        <p><strong>Pertanyaan Pak Hendra:</strong> <em>"Apakah sekat triplek 60×40 cm dan 90×60 cm sebangun?"</em></p>
+        <div style="background:#f9f9f9;padding:10px;border-radius:6px;margin-top:8px;border-left:3px solid #9b59b6;">
+            <p><strong>Respons Chatbot:</strong> <em>"Ya, keduanya sebangun karena sama-sama berbentuk persegi panjang."</em></p>
+        </div>
+        <br>
+        <p><strong>Apakah respons chatbot ini benar?</strong></p>
+        <select id="cek-cb1" style="padding:6px;border-radius:6px;border:1px solid #ccc;width:100%;max-width:500px;margin-top:6px;">
+            <option value="">-- Pilih --</option>
+            <option value="benar">Benar, alasannya sudah tepat</option>
+            <option value="salah">Salah, alasannya perlu diperbaiki</option>
+        </select>
+        <div id="fb-cb1" style="margin-top:8px;"></div>
+    </div>
+
+    <div style="background:#fff;padding:16px;border-radius:10px;margin-bottom:16px;border:1px solid #ddd;">
+        <p><strong>Pertanyaan Pak Hendra:</strong> <em>"Apakah kaca jendela 15×10 cm dan 20×12 cm sebangun?"</em></p>
+        <div style="background:#f9f9f9;padding:10px;border-radius:6px;margin-top:8px;border-left:3px solid #9b59b6;">
+            <p><strong>Respons Chatbot:</strong> <em>"Ya, keduanya sebangun karena perbandingan panjangnya 15/20 = 3/4 dan perbandingan lebarnya 10/12 = 5/6, sehingga keduanya sebangun."</em></p>
+        </div>
+        <br>
+        <p><strong>Apakah respons chatbot ini benar?</strong></p>
+        <select id="cek-cb2" style="padding:6px;border-radius:6px;border:1px solid #ccc;width:100%;max-width:500px;margin-top:6px;">
+            <option value="">-- Pilih --</option>
+            <option value="benar">Benar, alasannya sudah tepat</option>
+            <option value="salah">Salah, chatbot membuat kesalahan logika</option>
+        </select>
+        <div id="fb-cb2" style="margin-top:8px;"></div>
+    </div>
+
+    <button onclick="cekChatbot()" class="hero-btn" style="max-width:220px;">Cek Analisis Chatbot</button>
+    <p id="result-cb" style="margin-top:10px;font-weight:bold;"></p>
+</div>
+
+<!-- NAVIGASI -->
+<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="Pendahuluan.html" class="hero-btn"><b>&#8592; Pendahuluan</b></a>
+    <a href="Kegiatan_2.html" class="hero-btn"><b>Lanjut ke Aktivitas 2 &#8594;</b></a>
+</div>
+
+</div><!-- end container-kegiatan-1 -->
+</div><!-- end blog-left -->
+
+<!-- SIDEBAR -->
+<div class="blog-right">
+    <h3>Daftar Aktivitas</h3>
+    <div class="pendahuluan-button"><i class='bx bxs-right-arrow'></i><p><a href="Pendahuluan.html">Pendahuluan</a></p></div>
+    <div class="kegiatan1-box"><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_1.html">Aktivitas 1</a></p></div>
+    <div class="Kegiatan2-box"><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_2.html">Aktivitas 2</a></p></div>
+    <div class="kegiatan3-box"><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_3.html">Aktivitas 3</a></p></div>
+    <div class="kalender-jam">
+        <div class="kalender">
+            <span id="hari">Hari</span>, <span id="bulan">Bulan</span>, <span id="tanggal">00</span>, <span id="tahun">Tahun</span>
+        </div>
+        <div class="jam">
+            <span id="hour">00</span>:<span id="menit">00</span>:<span id="detik">00</span> <span id="AMPM">AM</span>
+        </div>
+    </div>
+</div>
+
+</div><!-- end row -->
+</section><!-- end blog-content -->
+
+<section class="footer">
+    <div class="row">
+        <div><h4><a href="About Us.html">ABOUT US</a></h4><h1>Profil Sekolah</h1></div>
+        <div>
+            <h4><a href="index.html">AIGONOMETRI</a></h4>
+            <h1><a href="Kegiatan_1.html">Geometri</a></h1><br/>
+            <span><a href="Identitas_Modul.html">Kesebangunan dan Kekongruenan</a></span><br/><br/>
+            <span><a href="https://aws.amazon.com/id/what-is/artificial-intelligence/">Artificial Intelligence</a></span><br/><br/>
+            <span><a href="https://www.sinotif.com/berita_acara/berita_artikel/detail/memahami-jenis-ai-berdasarkan-teknologi-yang-digunakan">Rule-Based AI</a></span><br/><br/>
+        </div>
+    </div>
+    <br /><hr />
+    <div class="univ-um">
+        <h4>The School</h4>
+        <p>SMP Plus Al Firdaus</p><p>SMKS Al Firdaus</p><p>Sekolah Menengah Pertama</p>
+        <p>Jl. Nusa Indah No. 351, Desa Bocek, Kecamatan Karangploso, Kabupaten Malang, Jawa Timur 65152</p>
+        <p>2026</p>
+        <div class="icons">
+            <i class="bx bxl-facebook-circle"></i><i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i><i class="bx bxl-whatsapp"></i>
+        </div>Untuk 
+    </div>
+    <br /><hr />
+    <div class="kopi-kanan"><p>&#169; 2026 Rino Dharmawan Fikri All Rights Reserved</p></div>
+</section>
+
+<a href="" class="kembali-keatas" id="keatas1"><i class="bx bx-arrow-to-top"></i></a>
+
+<script>
+// ---- SOAL 1 ----
+function cekSoal1() {
+    var a = document.getElementById('s1a').value;
+    var b = document.getElementById('s1b').value;
+    var c = document.getElementById('s1c').value;
+    var skor = 0;
+
+    if (a === '1') {
+        skor++; document.getElementById('s1a').style.border='2px solid green';
+        document.getElementById('fb-s1a').innerHTML='<span style="color:green;">&#10003; Benar! 30 &#247; 30 = 1.</span>';
+    } else if (a) {
+        document.getElementById('s1a').style.border='2px solid red';
+        document.getElementById('fb-s1a').innerHTML='<span style="color:red;">&#10007; Hitung: 30 &#247; 30 = 1. Bilangan yang sama dibagi dirinya sendiri hasilnya 1.</span>';
+    }
+
+    if (b === 'kongruen') {
+        skor++; document.getElementById('s1b').style.border='2px solid green';
+        document.getElementById('fb-s1b').innerHTML='<span style="color:green;">&#10003; Benar! Perbandingan = 1 artinya ukurannya sama persis &#8594; kongruen.</span>';
+    } else if (b) {
+        document.getElementById('s1b').style.border='2px solid red';
+        document.getElementById('fb-s1b').innerHTML='<span style="color:red;">&#10007; Perbandingan sisi = 1 berarti ukurannya identik. Ini adalah definisi kongruen.</span>';
+    }
+
+    if (c === 'ya') {
+        skor++; document.getElementById('s1c').style.border='2px solid green';
+        document.getElementById('fb-s1c').innerHTML='<span style="color:green;">&#10003; Benar! Kongruen adalah kasus khusus sebangun dengan faktor skala = 1. Jadi bangun yang kongruen pasti juga sebangun.</span>';
+    } else if (c) {
+        document.getElementById('s1c').style.border='2px solid red';
+        document.getElementById('fb-s1c').innerHTML='<span style="color:red;">&#10007; Kongruen adalah kasus khusus sebangun. Jika faktor skala = 1, bangun tersebut kongruen sekaligus sebangun.</span>';
+    }
+
+    var r = document.getElementById('result-s1');
+    r.innerHTML = skor === 3 ? '&#127881; Semua benar! Kamu memahami konsep kongruen dengan baik.' : 'Skor: ' + skor + '/3. Periksa kembali jawaban yang salah.';
+    r.style.color = skor === 3 ? 'green' : 'orange';
+}
+
+// ---- SOAL 2 ----
+function cekSoal2() {
+    var a = document.getElementById('s2a').value;
+    var b = document.getElementById('s2b').value;
+    var c = document.getElementById('s2c').value;
+    var d = document.getElementById('s2d').value;
+    var e = document.getElementById('s2e').value;
+    var skor = 0;
+
+    if (a === '2/3') {
+        skor++; document.getElementById('s2a').style.border='2px solid green';
+        document.getElementById('fb-s2a').innerHTML='<span style="color:green;">&#10003; Benar! 60 &#247; 90 = 2/3.</span>';
+    } else if (a) {
+        document.getElementById('s2a').style.border='2px solid red';
+        document.getElementById('fb-s2a').innerHTML='<span style="color:red;">&#10007; Hitung: 60 &#247; 90. Sederhanakan: 60/90 = 6/9 = 2/3.</span>';
+    }
+
+    if (b === '2/3') {
+        skor++; document.getElementById('s2b').style.border='2px solid green';
+        document.getElementById('fb-s2b').innerHTML='<span style="color:green;">&#10003; Benar! 40 &#247; 60 = 2/3.</span>';
+    } else if (b) {
+        document.getElementById('s2b').style.border='2px solid red';
+        document.getElementById('fb-s2b').innerHTML='<span style="color:red;">&#10007; Hitung: 40 &#247; 60. Sederhanakan: 40/60 = 4/6 = 2/3.</span>';
+    }
+
+    if (c === 'ya') {
+        skor++; document.getElementById('s2c').style.border='2px solid green';
+        document.getElementById('fb-s2c').innerHTML='<span style="color:green;">&#10003; Benar! 2/3 = 2/3. Perbandingan panjang dan lebar sama.</span>';
+    } else if (c) {
+        document.getElementById('s2c').style.border='2px solid red';
+        document.getElementById('fb-s2c').innerHTML='<span style="color:red;">&#10007; Periksa kembali: 60/90 = 2/3 dan 40/60 = 2/3. Keduanya sama.</span>';
+    }
+
+    if (d === 'sebangun') {
+        skor++; document.getElementById('s2d').style.border='2px solid green';
+        document.getElementById('fb-s2d').innerHTML='<span style="color:green;">&#10003; Benar! Perbandingan sama (2/3) tetapi ukuran berbeda &#8594; sebangun tetapi tidak kongruen.</span>';
+    } else if (d) {
+        document.getElementById('s2d').style.border='2px solid red';
+        document.getElementById('fb-s2d').innerHTML='<span style="color:red;">&#10007; Perbandingan sisi bersesuaian sama (2/3 = 2/3) dan ukuran berbeda &#8594; sebangun tetapi tidak kongruen.</span>';
+    }
+
+    if (e === '2/3') {
+        skor++; document.getElementById('s2e').style.border='2px solid green';
+        document.getElementById('fb-s2e').innerHTML='<span style="color:green;">&#10003; Benar! Faktor skala dari Sekat Baru ke Sekat Lama = 60/90 = 2/3.</span>';
+    } else if (e) {
+        document.getElementById('s2e').style.border='2px solid red';
+        document.getElementById('fb-s2e').innerHTML='<span style="color:red;">&#10007; Faktor skala = ukuran Sekat Lama &#247; ukuran Sekat Baru = 60/90 = 2/3.</span>';
+    }
+
+    var r = document.getElementById('result-s2');
+    r.innerHTML = skor === 5 ? '&#127881; Semua benar! Kamu berhasil menganalisis kesebangunan sekat triplek.' : 'Skor: ' + skor + '/5. Periksa kembali jawaban yang salah.';
+    r.style.color = skor === 5 ? 'green' : 'orange';
+}
+
+// ---- SOAL 3 ----
+function cekSoal3() {
+    var a = document.getElementById('s3a').value;
+    var b = document.getElementById('s3b').value;
+    var c = document.getElementById('s3c').value;
+    var d = document.getElementById('s3d').value;
+    var e = document.getElementById('s3e').value;
+    var skor = 0;
+
+    if (a === '3/4') {
+        skor++; document.getElementById('s3a').style.border='2px solid green';
+        document.getElementById('fb-s3a').innerHTML='<span style="color:green;">&#10003; Benar! 15 &#247; 20 = 3/4.</span>';
+    } else if (a) {
+        document.getElementById('s3a').style.border='2px solid red';
+        document.getElementById('fb-s3a').innerHTML='<span style="color:red;">&#10007; Hitung: 15 &#247; 20 = 15/20 = 3/4.</span>';
+    }
+
+    if (b === '5/6') {
+        skor++; document.getElementById('s3b').style.border='2px solid green';
+        document.getElementById('fb-s3b').innerHTML='<span style="color:green;">&#10003; Benar! 10 &#247; 12 = 5/6.</span>';
+    } else if (b) {
+        document.getElementById('s3b').style.border='2px solid red';
+        document.getElementById('fb-s3b').innerHTML='<span style="color:red;">&#10007; Hitung: 10 &#247; 12 = 10/12 = 5/6.</span>';
+    }
+
+    if (c === 'tidak') {
+        skor++; document.getElementById('s3c').style.border='2px solid green';
+        document.getElementById('fb-s3c').innerHTML='<span style="color:green;">&#10003; Benar! 3/4 = 0,75 sedangkan 5/6 &#8776; 0,833. Keduanya tidak sama.</span>';
+    } else if (c) {
+        document.getElementById('s3c').style.border='2px solid red';
+        document.getElementById('fb-s3c').innerHTML='<span style="color:red;">&#10007; Ubah ke desimal: 3/4 = 0,75 dan 5/6 &#8776; 0,833. Nilainya berbeda.</span>';
+    }
+
+    if (d === 'tidak') {
+        skor++; document.getElementById('s3d').style.border='2px solid green';
+        document.getElementById('fb-s3d').innerHTML='<span style="color:green;">&#10003; Benar! Karena 3/4 &#8800; 5/6, perbandingan sisi bersesuaian tidak sama &#8594; tidak sebangun. Artinya kusen tidak bisa dibuat seragam.</span>';
+    } else if (d) {
+        document.getElementById('s3d').style.border='2px solid red';
+        document.getElementById('fb-s3d').innerHTML='<span style="color:red;">&#10007; Karena perbandingan panjang (3/4) tidak sama dengan perbandingan lebar (5/6), kedua kaca tidak sebangun. Pak Hendra perlu menyesuaikan ukuran salah satu kaca.</span>';
+    }
+
+    if (e === '40/3') {
+        skor++; document.getElementById('s3e').style.border='2px solid green';
+        document.getElementById('fb-s3e').innerHTML='<span style="color:green;">&#10003; Benar! Faktor skala = 20/15 = 4/3. Lebar kaca baru = 10 &#215; 4/3 = 40/3 &#8776; 13,3 cm. Pak Hendra harus memesan kaca dengan lebar 13,3 cm agar sebangun dengan Kaca P.</span>';
+    } else if (e) {
+        document.getElementById('s3e').style.border='2px solid red';
+        document.getElementById('fb-s3e').innerHTML='<span style="color:red;">&#10007; Faktor skala = 20 &#247; 15 = 4/3. Lebar kaca baru = 10 &#215; 4/3 = 40/3 cm (sekitar 13,3 cm). Bukan 12 cm karena Kaca Q tidak sebangun dengan Kaca P.</span>';
+    }
+
+    var r = document.getElementById('result-s3');
+    r.innerHTML = skor === 5 ? '&#127881; Semua benar! Kamu berhasil menganalisis kaca jendela dengan tepat.' : 'Skor: ' + skor + '/5. Periksa kembali jawaban yang salah.';
+    r.style.color = skor === 5 ? 'green' : 'orange';
+}
+
+// ---- CEK CHATBOT ----
+function cekChatbot() {
+    var cb1 = document.getElementById('cek-cb1').value;
+    var cb2 = document.getElementById('cek-cb2').value;
+    var skor = 0;
+
+    if (cb1 === 'salah') {
+        skor++;
+        document.getElementById('cek-cb1').style.border='2px solid green';
+        document.getElementById('fb-cb1').innerHTML='<span style="color:green;">&#10003; Tepat! Respons chatbot itu <strong>salah</strong>. Alasan "sama-sama persegi panjang" tidak cukup untuk menyimpulkan sebangun. Yang harus diperiksa adalah perbandingan sisi bersesuaian: 60/90 = 2/3 dan 40/60 = 2/3 &#8594; barulah bisa disimpulkan sebangun. Pak Hendra benar untuk tidak langsung percaya chatbot!</span>';
+    } else if (cb1 === 'benar') {
+        document.getElementById('cek-cb1').style.border='2px solid red';
+        document.getElementById('fb-cb1').innerHTML='<span style="color:red;">&#10007; Respons chatbot itu <strong>tidak tepat</strong>. Dua bangun tidak otomatis sebangun hanya karena jenisnya sama. Harus dihitung perbandingan sisi bersesuaiannya terlebih dahulu.</span>';
+    }
+
+    if (cb2 === 'salah') {
+        skor++;
+        document.getElementById('cek-cb2').style.border='2px solid green';
+        document.getElementById('fb-cb2').innerHTML='<span style="color:green;">&#10003; Tepat! Chatbot membuat <strong>kesalahan logika</strong>. Chatbot menyebutkan dua perbandingan yang berbeda (3/4 dan 5/6) tetapi tetap menyimpulkan sebangun. Padahal syarat sebangun adalah perbandingan sisi bersesuaian harus <em>sama</em>. Karena 3/4 &#8800; 5/6, kedua kaca <strong>tidak sebangun</strong>. Pak Hendra tidak boleh memesan kaca berdasarkan jawaban chatbot yang salah ini!</span>';
+    } else if (cb2 === 'benar') {
+        document.getElementById('cek-cb2').style.border='2px solid red';
+        document.getElementById('fb-cb2').innerHTML='<span style="color:red;">&#10007; Perhatikan lebih teliti! Chatbot menyebutkan 15/20 = 3/4 dan 10/12 = 5/6, lalu menyimpulkan sebangun. Padahal 3/4 &#8800; 5/6, sehingga kesimpulan chatbot <strong>salah</strong>. Ini contoh pentingnya memverifikasi jawaban chatbot!</span>';
+    }
+
+    var r = document.getElementById('result-cb');
+    r.innerHTML = skor === 2 ? '&#127881; Analisismu tepat! Kamu sudah bisa mendeteksi kesalahan logika pada respons chatbot.' : 'Skor: ' + skor + '/2. Baca kembali penjelasan umpan balik di atas.';
+    r.style.color = skor === 2 ? 'green' : 'orange';
+}
+</script>
+<script src="CourseScriptKomen.js"></script>
+</body>
+</html>

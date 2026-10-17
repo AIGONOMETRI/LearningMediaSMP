@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e94e3">
+    <title>AIGONOMETRI — Evaluasi</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Evaluasi.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="AIGONOMETRI.png" class="aigonometri"/></a>
+            <a href="index.html"><img src="logo_smp.png" class="logo-um"></a>
+            <div class="navb" id="nvb">
+                <i class="bx bx-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="Identitas_Modul.html"><b>Aktivitas</b></a></li>
+                    <li><a href="Petunjuk.html"><b>Petunjuk</b></a></li>
+                    <li><a href="About Us.html"><b>About Us</b></a></li>
+                    <li><a href="Evaluasi.html"><b>Evaluasi</b></a></li>
+                </ul>
+            </div>
+            <i class="bx bx-menu" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Evaluasi &amp; Refleksi</h1>
+            <br /><br />
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <div class="container-kegiatan-1">
+
+                    <!-- ANALISIS & EVALUASI -->
+                    <h2>Analisis dan Evaluasi Pemecahan Masalah</h2>
+                    <p style="color:#555;">⏱ Alokasi waktu: <strong>10 menit</strong></p>
+                    <br>
+
+                    <!-- SOAL E1 -->
+                    <div class="pembahasan" style="margin-bottom:20px;">
+                        <p><strong>1.</strong> Mengapa perbandingan sisi bersesuaian harus sama agar dua bangun dikatakan sebangun?</p>
+                        <select id="e1" style="padding:6px;border-radius:6px;border:1px solid #ccc;width:100%;max-width:500px;">
+                            <option value="">-- Pilih Jawaban --</option>
+                            <option value="a">Karena kedua bangun harus memiliki jenis yang sama</option>
+                            <option value="b">Karena perbandingan yang sama menjamin bentuk proporsional dengan sudut bersesuaian yang sama besar</option>
+                            <option value="c">Karena luas kedua bangun harus sama</option>
+                            <option value="d">Karena kedua bangun harus memiliki keliling yang sama</option>
+                        </select>
+                        <button onclick="cekE1()" class="hero-btn" style="max-width:160px;margin-top:8px;">Cek</button>
+                        <div id="fb-e1" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- SOAL E2 -->
+                    <div class="pembahasan" style="margin-bottom:20px;">
+                        <p><strong>2.</strong> Dua persegi panjang: P berukuran 12 cm × 8 cm dan Q berukuran 9 cm × 6 cm. Apakah P dan Q sebangun?</p>
+                        <p style="font-size:0.9em;color:#555;">Langkah 1: Hitung perbandingan panjang P terhadap Q.</p>
+                        <select id="e2a" style="padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- 12/9 = --</option>
+                            <option value="4/3">4/3</option>
+                            <option value="3/4">3/4</option>
+                            <option value="2/3">2/3</option>
+                            <option value="3/2">3/2</option>
+                        </select>
+                        <p style="font-size:0.9em;color:#555;margin-top:8px;">Langkah 2: Hitung perbandingan lebar P terhadap Q.</p>
+                        <select id="e2b" style="padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- 8/6 = --</option>
+                            <option value="4/3">4/3</option>
+                            <option value="3/4">3/4</option>
+                            <option value="2/3">2/3</option>
+                            <option value="3/2">3/2</option>
+                        </select>
+                        <p style="font-size:0.9em;color:#555;margin-top:8px;">Langkah 3: Kesimpulan.</p>
+                        <select id="e2c" style="padding:6px;border-radius:6px;border:1px solid #ccc;">
+                            <option value="">-- Pilih --</option>
+                            <option value="sebangun">P dan Q sebangun</option>
+                            <option value="tidak">P dan Q tidak sebangun</option>
+                            <option value="kongruen">P dan Q kongruen</option>
+                        </select>
+                        <button onclick="cekE2()" class="hero-btn" style="max-width:160px;margin-top:8px;">Cek</button>
+                        <div id="fb-e2" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- SOAL E3 -->
+                    <div class="pembahasan" style="margin-bottom:20px;">
+                        <p><strong>3.</strong> Sebuah foto berukuran 4 cm × 6 cm diperbesar sehingga lebarnya menjadi 18 cm. Berapakah panjang foto setelah diperbesar agar tetap sebangun?</p>
+                        <p style="font-size:0.9em;color:#555;">Petunjuk: Faktor skala = 18 ÷ 6 = 3. Panjang baru = 4 × 3 = ?</p>
+                        <input type="number" id="e3" placeholder="cm" style="width:100px;padding:8px;border-radius:6px;border:1px solid #ccc;">
+                        <span> cm</span>
+                        <button onclick="cekE3()" class="hero-btn" style="max-width:160px;margin-left:8px;">Cek</button>
+                        <div id="fb-e3" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- SOAL E4 -->
+                    <div class="pembahasan" style="margin-bottom:20px;">
+                        <p><strong>4.</strong> Dua segitiga siku-siku: segitiga A dengan sisi 6-8-10 cm dan segitiga B dengan sisi 6-8-10 cm. Bagaimana hubungan kedua segitiga tersebut?</p>
+                        <select id="e4" style="padding:6px;border-radius:6px;border:1px solid #ccc;width:100%;max-width:500px;">
+                            <option value="">-- Pilih --</option>
+                            <option value="kongruen">Kongruen (dan juga sebangun)</option>
+                            <option value="sebangun">Sebangun tetapi tidak kongruen</option>
+                            <option value="tidak">Tidak sebangun</option>
+                        </select>
+                        <button onclick="cekE4()" class="hero-btn" style="max-width:160px;margin-top:8px;">Cek</button>
+                        <div id="fb-e4" style="margin-top:8px;"></div>
+                    </div>
+
+                    <!-- SOAL E5 -->
+                    <div class="pembahasan" style="margin-bottom:20px;">
+                        <p><strong>5.</strong> Papan asli berukuran 150 cm × 100 cm. Miniatur dibuat dengan faktor skala 1/5. Berapakah ukuran miniatur?</p>
+                        <p style="font-size:0.9em;color:#555;">Panjang miniatur = 150 × 1/5 = ? &nbsp;|&nbsp; Lebar miniatur = 100 × 1/5 = ?</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+                            <label>Panjang: <input type="number" id="e5p" placeholder="cm" style="width:80px;padding:6px;border-radius:6px;border:1px solid #ccc;"> cm</label>
+                            <label>Lebar: <input type="number" id="e5l" placeholder="cm" style="width:80px;padding:6px;border-radius:6px;border:1px solid #ccc;"> cm</label>
+                        </div>
+                        <button onclick="cekE5()" class="hero-btn" style="max-width:160px;margin-top:8px;">Cek</button>
+                        <div id="fb-e5" style="margin-top:8px;"></div>
+                    </div>
+
+                    <div id="skor-total" style="background:#e8f4fd;padding:14px;border-radius:10px;margin-top:8px;display:none;">
+                        <p id="teks-skor" style="font-weight:bold;font-size:1.1em;"></p>
+                    </div>
+                    <button onclick="hitungSkorTotal()" class="hero-btn" style="max-width:220px;margin-top:8px;">Lihat Skor Total</button>
+
+                    <br><hr><br>
+
+                    <!-- PENUTUP & REFLEKSI -->
+                    <h2>Penutup &amp; Refleksi</h2>
+                    <p style="color:#555;">⏱ Alokasi waktu: <strong>10 menit</strong></p>
+                    <br>
+
+                    <div style="background:#e8f4fd;padding:16px;border-radius:10px;margin-bottom:20px;border-left:4px solid #2e94e3;">
+                        <h3>📌 Rangkuman Materi</h3>
+                        <ul style="margin-left:20px;line-height:2.2;">
+                            <li><strong>Sebangun:</strong> Sudut bersesuaian sama besar + perbandingan sisi bersesuaian sama.</li>
+                            <li><strong>Kongruen:</strong> Bentuk dan ukuran sama persis (faktor skala = 1). Kongruen adalah kasus khusus sebangun.</li>
+                            <li><strong>Faktor skala:</strong> Perbandingan ukuran miniatur terhadap ukuran asli.</li>
+                            <li><strong>Dua persegi panjang tidak otomatis sebangun</strong> hanya karena sama-sama persegi panjang.</li>
+                            <li><strong>Chatbot berbasis aturan</strong> hanya menjawab sesuai aturan yang diprogram — selalu verifikasi jawabannya!</li>
+                        </ul>
+                    </div>
+
+                    <h3>Pertanyaan Refleksi</h3>
+                    <p style="font-size:0.9em;color:#555;">Jawab dengan jujur untuk membantu kamu menyadari pemahamanmu.</p>
+                    <br>
+
+                    <div style="margin-bottom:14px;">
+                        <p><strong>R1.</strong> Apa perbedaan utama antara kesebangunan dan kekongruenan?</p>
+                        <textarea id="r1" rows="2" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;" placeholder="Tulis jawabanmu..."></textarea>
+                    </div>
+                    <div style="margin-bottom:14px;">
+                        <p><strong>R2.</strong> Bagaimana cara menggunakan faktor skala untuk menentukan ukuran miniatur?</p>
+                        <textarea id="r2" rows="2" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;" placeholder="Tulis jawabanmu..."></textarea>
+                    </div>
+                    <div style="margin-bottom:14px;">
+                        <p><strong>R3.</strong> Apa yang kamu pelajari dari menguji chatbot matematika?</p>
+                        <textarea id="r3" rows="2" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;" placeholder="Tulis jawabanmu..."></textarea>
+                    </div>
+                    <div style="margin-bottom:14px;">
+                        <p><strong>R4.</strong> Bagian mana yang masih membingungkan dan bagaimana cara kamu akan memeriksanya?</p>
+                        <textarea id="r4" rows="2" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;" placeholder="Tulis jawabanmu..."></textarea>
+                    </div>
+
+                    <button onclick="simpanRefleksi()" class="hero-btn" style="max-width:200px;">Simpan Refleksi</button>
+                    <div id="fb-refleksi" style="margin-top:10px;"></div>
+
+                    <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+                        <a href="Kegiatan_3.html" class="hero-btn" style="background:#6c757d;"><b>← Aktivitas 3</b></a>
+                        <a href="index.html" class="hero-btn"><b>🏠 Kembali ke Home</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="blog-right">
+                <h3>Daftar Kegiatan</h3>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Identitas_Modul.html">Identitas Modul</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Pendahuluan.html">Pendahuluan</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_1.html">Aktivitas 1</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_2.html">Aktivitas 2</a></p></div>
+                <div><i class='bx bxs-right-arrow'></i><p><a href="Kegiatan_3.html">Aktivitas 3</a></p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="row">
+            <div><h4><a href="About Us.html">ABOUT US</a></h4><h1>Profil Sekolah</h1></div>
+            <div>
+                <h4><a href="index.html">AIGONOMETRI</a></h4>
+                <h1><a href="Kegiatan_1.html">Geometri</a></h1><br/>
+                <span><a href="Identitas_Modul.html">Kesebangunan dan Kekongruenan</a></span><br/><br/>
+                <span><a href="https://aws.amazon.com/id/what-is/artificial-intelligence/">Artificial Intelligence</a></span><br/><br/>
+                <span><a href="https://www.sinotif.com/berita_acara/berita_artikel/detail/memahami-jenis-ai-berdasarkan-teknologi-yang-digunakan">Rule-Based AI</a></span><br/><br/>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="univ-um">
+            <h4>The School</h4>
+            <p>SMP Plus Al Firdaus</p><p>SMKS Al Firdaus</p><p>Sekolah Menengah Pertama</p>
+            <p>Jl. Nusa Indah No. 351, Desa Bocek, Kecamatan Karangploso, Kabupaten Malang, Jawa Timur 65152</p>
+            <p>2026</p>
+            <div class="icons">
+                <i class="bx bxl-facebook-circle"></i><i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram-alt"></i><i class="bx bxl-whatsapp"></i>
+            </div>
+        </div>
+        <br /><hr />
+        <div class="kopi-kanan"><p>© 2026 Rino Dharmawan Fikri All Rights Reserved</p></div>
+    </section>
+
+    <a href="" class="kembali-keatas" id="keatas1"><i class="bx bx-arrow-to-top"></i></a>
+
+    <script>
+    var skorE = { e1:false, e2:false, e3:false, e4:false, e5:false };
+
+    function cekE1() {
+        var sel = document.getElementById('e1');
+        var fb = document.getElementById('fb-e1');
+        if (!sel.value) { fb.innerHTML = '<span style="color:orange;">⚠️ Pilih jawaban.</span>'; return; }
+        if (sel.value === 'b') {
+            skorE.e1 = true; sel.style.border='2px solid green';
+            fb.innerHTML = '<span style="color:green;">✅ Benar! Perbandingan sisi yang sama menjamin bentuk proporsional — sudut-sudut bersesuaian otomatis sama besar pada bangun yang sebangun.</span>';
+        } else {
+            sel.style.border='2px solid red';
+            fb.innerHTML = '<span style="color:red;">❌ Kurang tepat. Kesebangunan tidak bergantung pada jenis, luas, atau keliling — melainkan pada perbandingan sisi bersesuaian yang sama.</span>';
+        }
+    }
+
+    function cekE2() {
+        var a = document.getElementById('e2a').value;
+        var b = document.getElementById('e2b').value;
+        var c = document.getElementById('e2c').value;
+        var fb = document.getElementById('fb-e2');
+        var benar = a === '4/3' && b === '4/3' && c === 'sebangun';
+        if (benar) {
+            skorE.e2 = true;
+            [document.getElementById('e2a'), document.getElementById('e2b'), document.getElementById('e2c')].forEach(function(el){ el.style.border='2px solid green'; });
+            fb.innerHTML = '<span style="color:green;">✅ Benar! 12/9 = 4/3 dan 8/6 = 4/3. Perbandingan sama → P dan Q sebangun (tetapi tidak kongruen karena ukurannya berbeda).</span>';
+        } else {
+            fb.innerHTML = '<span style="color:red;">❌ Periksa kembali. 12÷9 = 4/3 dan 8÷6 = 4/3. Karena perbandingannya sama, kedua bangun sebangun.</span>';
+        }
+    }
+
+    function cekE3() {
+        var val = parseFloat(document.getElementById('e3').value);
+        var fb = document.getElementById('fb-e3');
+        if (isNaN(val)) { fb.innerHTML = '<span style="color:orange;">⚠️ Masukkan angka.</span>'; return; }
+        if (val === 12) {
+            skorE.e3 = true;
+            fb.innerHTML = '<span style="color:green;">✅ Benar! Faktor skala = 18÷6 = 3. Panjang baru = 4 × 3 = <strong>12 cm</strong>.</span>';
+        } else {
+            fb.innerHTML = '<span style="color:red;">❌ Belum tepat. Faktor skala = 18÷6 = 3. Panjang baru = 4 × 3 = ?</span>';
+        }
+    }
+
+    function cekE4() {
+        var sel = document.getElementById('e4');
+        var fb = document.getElementById('fb-e4');
+        if (!sel.value) { fb.innerHTML = '<span style="color:orange;">⚠️ Pilih jawaban.</span>'; return; }
+        if (sel.value === 'kongruen') {
+            skorE.e4 = true; sel.style.border='2px solid green';
+            fb.innerHTML = '<span style="color:green;">✅ Benar! Sisi-sisinya identik (6=6, 8=8, 10=10) → kongruen. Kongruen adalah kasus khusus sebangun dengan faktor skala = 1.</span>';
+        } else {
+            sel.style.border='2px solid red';
+            fb.innerHTML = '<span style="color:red;">❌ Periksa kembali. Semua sisi sama persis → kongruen (dan juga sebangun dengan faktor skala = 1).</span>';
+        }
+    }
+
+    function cekE5() {
+        var p = parseFloat(document.getElementById('e5p').value);
+        var l = parseFloat(document.getElementById('e5l').value);
+        var fb = document.getElementById('fb-e5');
+        if (isNaN(p) || isNaN(l)) { fb.innerHTML = '<span style="color:orange;">⚠️ Masukkan kedua nilai.</span>'; return; }
+        if (p === 30 && l === 20) {
+            skorE.e5 = true;
+            fb.innerHTML = '<span style="color:green;">✅ Benar! Panjang = 150 × 1/5 = <strong>30 cm</strong>. Lebar = 100 × 1/5 = <strong>20 cm</strong>. Miniatur: 30 × 20 cm.</span>';
+        } else {
+            fb.innerHTML = '<span style="color:red;">❌ Belum tepat. Panjang = 150 × 1/5 = 30 cm. Lebar = 100 × 1/5 = 20 cm.</span>';
+        }
+    }
+
+    function hitungSkorTotal() {
+        var total = Object.values(skorE).filter(Boolean).length;
+        var el = document.getElementById('skor-total');
+        var teks = document.getElementById('teks-skor');
+        el.style.display = 'block';
+        var pesan = total === 5 ? '🎉 Sempurna! Kamu menguasai materi kesebangunan dan kekongruenan.' :
+                    total >= 3 ? '👍 Bagus! Kamu sudah memahami sebagian besar materi. Periksa kembali soal yang salah.' :
+                    '📚 Perlu belajar lebih lanjut. Baca kembali konsep kesebangunan dan coba lagi.';
+        teks.innerHTML = 'Skor: ' + total + '/5 &nbsp;|&nbsp; ' + pesan;
+        teks.style.color = total === 5 ? 'green' : total >= 3 ? '#e67e22' : 'red';
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function simpanRefleksi() {
+        var r1 = document.getElementById('r1').value.trim();
+        var r2 = document.getElementById('r2').value.trim();
+        var r3 = document.getElementById('r3').value.trim();
+        var r4 = document.getElementById('r4').value.trim();
+        var fb = document.getElementById('fb-refleksi');
+        if (!r1 || !r2 || !r3 || !r4) {
+            fb.innerHTML = '<span style="color:orange;">⚠️ Isi semua pertanyaan refleksi terlebih dahulu.</span>';
+            return;
+        }
+        fb.innerHTML = '<span style="color:green;">✅ Refleksi tersimpan! Terima kasih sudah menyelesaikan pembelajaran Pertemuan 9. Semangat terus belajar matematika!</span>';
+    }
+
+    var nvb = document.getElementById("nvb");
+    function showMenu() { if (nvb) nvb.style.right = "0"; }
+    function hideMenu() { if (nvb) nvb.style.right = "-200px"; }
+
+    var keatas = document.querySelector('.kembali-keatas');
+    if (keatas) {
+        window.addEventListener("scroll", function() {
+            if (window.pageYOffset > 100) keatas.classList.add("active");
+            else keatas.classList.remove("active");
+        });
+    }
+    </script>
+</body>
+</html>
